@@ -7,9 +7,8 @@ int contadorDeCaracteres(char palavra[100]){
     return strlen(palavra);
 }
 
-int main(){
+void main(){
     printf("Escreva uma palavra: ");
     scanf("%s",palavra);
     printf("\n\n\nTamanho da palavra: %d",contadorDeCaracteres(palavra));
-    return 0;
 }
