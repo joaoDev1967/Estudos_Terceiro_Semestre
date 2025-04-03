@@ -1,13 +1,9 @@
 #include<stdio.h>
 #include<string.h>
-// #include<stdbool.h>
 
 char palavra[100];
 char vogais[6] = {'a','e','i','o','u'};
 
-int contadorDeCaracteres(char palavra[100]){
-    return strlen(palavra);
-}
 
 int contadorDeVogais(char palavra[100]){
     int numVogais=0;
@@ -24,7 +20,7 @@ int contadorDeVogais(char palavra[100]){
 void main(){
     printf("Escreva uma palavra: ");
     scanf("%s",palavra);
-    printf("\n\n\nTamanho da palavra: %d",contadorDeCaracteres(palavra));
+    printf("\n\n\nTamanho da palavra: %d",strlen(palavra));
     printf("\nNúmero de vogais:%d",contadorDeVogais(palavra));
     printf("\nNúmero de consoantes:%d",strlen(palavra)-contadorDeVogais(palavra));
 }
